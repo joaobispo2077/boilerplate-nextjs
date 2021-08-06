@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 import GloblaStyles from '../src/styles/GloblaStyles';
-import { themes } from '../src/styles/themes';
+import { theme } from '../src/styles/themes';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -28,7 +28,7 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme={{ ...themes['default'] }}>
+    <ThemeProvider theme={theme}>
       <GloblaStyles />
       <Story />
     </ThemeProvider>
