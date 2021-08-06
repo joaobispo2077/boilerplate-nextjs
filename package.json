@@ -16,7 +16,6 @@
   "lint-staged": {
     "src/**/*.ts{,x}": [
       "yarn eslint --fix --max-warnings=0",
-      "yarn test --findRelatedTests --bail",
       "git add -A"
     ]
   },
